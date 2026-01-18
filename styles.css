@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Inter", sans-serif;
+}
+.gradient-color {
+  background: linear-gradient(
+    90deg,
+    #F7E93F,
+    #FB09B4,
+    #9100F8
+  );}
+/* navbar */
+nav{
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #412567;
+}
+.nav-text{
+    color: #FFFFFF;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    gap: 32px;
+}
+    
+
+.tech{
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+.wave{
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(to right,#F7E93F, #FB09B4, #9100F8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+button{
+    background: linear-gradient(to right,#F7E93F, #FB09B4, #9100F8);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10000px;
+    font-weight: 600;
+    font-size: 16px;
+    padding:  12px 35px 12px 16px;
+
+}
+nav>span{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:576px) {
+    button, .nav-text{
+        display: none;
+    }
+    nav>span{
+    display: inline;}
+
+}
+
